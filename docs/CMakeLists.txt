@@ -19,7 +19,7 @@ message("====="${CMAKE_CURRENT_BINARY_DIR}/..)
 
 file(GLOB_RECURSE EXTRA_FILES ../android/*)
 file(GLOB_RECURSE EXTRA_FILES2 ../ios/*)
-file(GLOB_RECURSE EXTRA_FILES3 ../*.sh)
+file(GLOB_RECURSE EXTRA_FILES3 ../*)
 file(GLOB_RECURSE EXTRA_FILES4 ../thirdparty/*)
 file(GLOB_RECURSE EXTRA_FILES5 ../cmake/*)
 file(GLOB_RECURSE EXTRA_FILES6 ../*.txt)

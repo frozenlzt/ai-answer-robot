@@ -126,25 +126,6 @@ def main():
 
     check_screenshot(filename="screenshot.png", directory=data_directory)
 
-    # stdout_queue = Queue(10)
-    # ## spaw baidu count
-    # baidu_queue = Queue(5)
-    # baidu_search_job = multiprocessing.Process(target=baidu_count_daemon,
-    #                                            args=(baidu_queue, stdout_queue, timeout))
-    # baidu_search_job.daemon = True
-    # baidu_search_job.start()
-    #
-    # ## spaw crawler
-    # knowledge_queue = Queue(5)
-    # knowledge_craw_job = multiprocessing.Process(target=crawler_daemon,
-    #                                              args=(knowledge_queue, stdout_queue))
-    # knowledge_craw_job.daemon = True
-    # knowledge_craw_job.start()
-    #
-    # ## output threading
-    # output_job = threading.Thread(target=print_terminal, args=(stdout_queue,))
-    # output_job.daemon = True
-    # output_job.start()
 
     if enable_chrome:
         closer = Event()

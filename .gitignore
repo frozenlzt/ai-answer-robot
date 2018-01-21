@@ -1,3 +1,4 @@
 CMakeLists.txt.user
 docs/CMakeLists.txt.user
 build*
+docs/CMakeLists.txt.user

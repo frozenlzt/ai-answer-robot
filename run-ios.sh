@@ -1,4 +1,4 @@
 #!/bin/bash
 PYTHONPATH=
-cd apple
+cd ios
 python3.6 main.py

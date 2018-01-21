@@ -9,7 +9,7 @@
 ## 部署&运行
 1. pip3 install -r requirements.txt
 2. 修改默认的配置文件`config.py`,配置文件夹中可以配置临时数据目录和appcode
-3. python3 ios.py 
+3. 项目目录执行  bash run-ios.sh
 
 ## Tips
 	如果发现缺少什么模块 ,根据 Terminal提示  pip3 install xxxx,xxxx,...

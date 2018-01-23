@@ -103,6 +103,8 @@ def printInfo():
               3. 芝士超人
               4. UC答题
               5. 知乎头脑王者
+              6. 百度贴吧百万富翁
+              7. 百度好看视频极速挑战
             """)
     global game_type
     game_type = input("输入节目序号: ")
@@ -116,6 +118,10 @@ def printInfo():
         game_type = "UC答题"
     elif game_type == "5":
         game_type = "知乎头脑王者"
+    elif game_type == "6":
+        game_type = "百度贴吧百万富翁"
+    elif game_type == "7":
+        game_type = "百度好看视频极速挑战"
     else:
         game_type = '百万英雄'
 

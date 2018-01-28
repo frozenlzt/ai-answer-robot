@@ -219,6 +219,8 @@ def main():
         enter = input("按Enter键开始，按ESC键退出,切换游戏请输入s回车...")
         if enter == chr(27):
             break
+        if enter == 'q':
+            exit()
         if enter == 's':
             printInfo()
         try:

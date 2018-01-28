@@ -1,4 +1,11 @@
-CMakeLists.txt.user
-docs/CMakeLists.txt.user
+.idea
+*.pyc
+__pycache__
+core/__pycache__
 build*
-docs/CMakeLists.txt.user
+screenshots
+.vscode
+.DS_Store
+dist
+build
+main.spec

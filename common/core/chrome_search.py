@@ -15,7 +15,7 @@ def browser_init():
     """
     system_version = platform.system().upper()
     browser_bin = ""
-    parent = "drivers"
+    parent = "common/drivers"
     if system_version.startswith("LINUX"):
         browser_bin = os.path.join(parent, "chromedriver-linux")
     if system_version.startswith("WINDOWS"):

@@ -16,7 +16,7 @@ from datetime import datetime
 from shutil import copyfile
 
 from PIL import Image
-from config import enable_scale
+from common.config import enable_scale
 # SCREENSHOT_WAY 是截图方法，
 # 经过 check_screenshot 后，会自动递
 # 不需手动修改
@@ -26,7 +26,7 @@ SCREENSHOT_WAY = 3
 def get_adb_tool():
     system_version = platform.system().upper()
     adb_bin = ""
-    parent = "adb"
+    parent = "common/adb"
     if system_version.startswith("LINUX"):
         adb_bin = os.path.join(parent, "linux", "adb")
     if system_version.startswith("WINDOWS"):

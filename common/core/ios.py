@@ -116,7 +116,7 @@ def save_screen(filename="screenshot.png", directory="."):
     :return:
     """
     copyfile(os.path.join(directory, filename),
-             os.path.join(directory, datetime.now().strftime("%m%d_%H%M%S").join(os.path.splitext(filename))))
+             os.path.join(directory + "/ios/", datetime.now().strftime("%m%d_%H%M%S").join(os.path.splitext(filename))))
 
 
 def parse_answer_area(source_file, text_area_file, compress_level, crop_area):

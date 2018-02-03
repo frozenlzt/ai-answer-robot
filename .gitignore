@@ -3,6 +3,7 @@
 __pycache__
 core/__pycache__
 build*
+docs/CMakeLists.txt.user
 screenshots
 .vscode
 .DS_Store

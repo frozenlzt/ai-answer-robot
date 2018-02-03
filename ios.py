@@ -18,22 +18,22 @@ from PIL import Image
 from multiprocessing import Event, Pipe
 from textwrap import wrap
 
-from config import api_key, enable_chrome, use_monitor, image_compress_level, crop_areas
-from config import api_version
-from config import app_id
-from config import app_key
-from config import app_secret
-from config import data_directory
-from config import prefer
-from core.android import save_screen, check_screenshot, get_adb_tool, analyze_current_screen_text,get_area_data
-from core.check_words import parse_false
-from core.chrome_search import run_browser
-from core.crawler.baiduzhidao import baidu_count
-from core.crawler.crawl import jieba_initialize, kwquery
-from core.ocr.baiduocr import get_text_from_image as bai_get_text
-from core.ocr.spaceocr import get_text_from_image as ocrspace_get_text
+from common.config import api_key, enable_chrome, use_monitor, image_compress_level, crop_areas
+from common.config import api_version
+from common.config import app_id
+from common.config import app_key
+from common.config import app_secret
+from common.config import data_directory
+from common.config import prefer
+from common.core.ios import save_screen, check_screenshot, get_adb_tool, analyze_current_screen_text,get_area_data
+from common.core.check_words import parse_false
+from common.core.chrome_search import run_browser
+from common.core.crawler.baiduzhidao import baidu_count
+from common.core.crawler.crawl import jieba_initialize, kwquery
+from common.core.ocr.baiduocr import get_text_from_image as bai_get_text
+from common.core.ocr.spaceocr import get_text_from_image as ocrspace_get_text
 ## jieba init
-from dynamic_table import clear_screen
+from common.dynamic_table import clear_screen
 
 jieba_initialize()
 
@@ -102,6 +102,9 @@ def printInfo():
               2. 冲顶大会
               3. 芝士超人
               4. UC答题
+              5. 知乎头脑王者
+              6. 百度贴吧百万富翁
+              7. 百度好看视频极速挑战
             """)
     global game_type
     game_type = input("输入节目序号: ")
@@ -113,6 +116,12 @@ def printInfo():
         game_type = "芝士超人"
     elif game_type == "4":
         game_type = "UC答题"
+    elif game_type == "5":
+        game_type = "知乎头脑王者"
+    elif game_type == "6":
+        game_type = "百度贴吧百万富翁"
+    elif game_type == "7":
+        game_type = "百度好看视频极速挑战"
     else:
         game_type = '百万英雄'
 
@@ -121,8 +130,8 @@ def main():
     timeout = args.timeout
 
     adb_bin = get_adb_tool()
-    if use_monitor:
-        os.system("{0} connect 127.0.0.1:62001".format(adb_bin))
+    #if use_monitor:
+    #    os.system("{0} connect 127.0.0.1:62001".format(adb_bin))
 
     check_screenshot(filename="screenshot.png", directory=data_directory)
 

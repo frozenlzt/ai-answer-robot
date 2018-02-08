@@ -12,16 +12,16 @@
 7. 百度好看视频极速挑战
 
 
+## 安装方法
+- [苹果手机使用方法](docs/ios.md)
+- [Android手机使用方法](docs/android.md)
+- [没有手机时使用方法-使用模拟器](docs/simulator-android.md)（没有android手机，苹果手机也搞不定时，或者以上方法使用有问题时都可用此方法）
+
 ## 运行方法
 - 从python官网安装python3.6环境,并安装pip
 - 安装依赖 `pip3 install -r common/requirements.txt`
 - bash run-ios.sh  苹果手机
 - bash run-android.sh 安卓手机 支持模拟器
-
-## 安装方法
-- 苹果手机使用方法
-- Android手机使用方法
-- 没有手机时使用方法-使用模拟器（以上方法使用有问题时都可用此方法）
 
 
 ## 了解本开源项目可以学到的技术
@@ -30,4 +30,9 @@
 - ios自动化测试技术 使用facebook开源的框架libimobiledevice
 - android的自动化测试技术及调试工具adb
 - python编程，多线程编程
+
+## 参考项目
+- hermanzhu的wechat-jumper  php版本
+- smileboywtu的MillionHeroAssistant python版本
+
 

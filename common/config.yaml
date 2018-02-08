@@ -70,7 +70,7 @@ prefer:
 enable_chrome: true
 
 ### 是否使用夜神模拟器 for android
-use_monitor: true
+use_monitor: false
 
 ### 是否使用模拟器 for ios
 use_ios_monitor: false

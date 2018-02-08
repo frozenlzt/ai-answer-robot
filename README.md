@@ -14,7 +14,7 @@
 
 ## 运行方法
 - 从python官网安装python3.6环境,并安装pip
-- pip3 install -r common/requirements.txt
+- 安装依赖 `pip3 install -r common/requirements.txt`
 - bash run-ios.sh  苹果手机
 - bash run-android.sh 安卓手机 支持模拟器
 

@@ -26,7 +26,7 @@ SCREENSHOT_WAY = 3
 def get_adb_tool():
     system_version = platform.system().upper()
     adb_bin = ""
-    parent = "common/adb"
+    parent = os.path.join("common","adb")
     if system_version.startswith("LINUX"):
         adb_bin = os.path.join(parent, "linux", "adb")
     if system_version.startswith("WINDOWS"):

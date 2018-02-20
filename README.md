@@ -10,7 +10,8 @@
 5. 知乎头脑王者
 6. 百度贴吧百万富翁
 7. 百度好看视频极速挑战
-
+8.<font color=red size=36> [如果有新app且题目所在区域变化较大可新增配置，查看示例](https://github.com/westeast/ai-answer-robot/commit/6c2d94a9294b0f2bb83eb59e7a083d32fbb3e314
+) </font>
 
 ## 安装方法
 - [苹果手机使用方法](docs/ios.md)
